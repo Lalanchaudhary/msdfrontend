@@ -18,7 +18,7 @@ const UserProfile = () => {
       
       console.log("Using token:", token); // Debugging token
 
-      const res = await axios.get(`http://localhost:9000/profile`, {
+      const res = await axios.get(`https://msdbackend-1.onrender.com/profile`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

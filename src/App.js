@@ -50,7 +50,7 @@ function App() {
   }, [])
 
   const gettingData = () => {
-    axios.get(`${window.location.origin}/data`)
+    axios.get(`https://msdbackend-1.onrender.com//data`)
       .then((res) => {
         // console.log(res);
         setCartItem(res.data);

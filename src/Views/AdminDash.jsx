@@ -18,7 +18,7 @@ function AdminDash() {
     }
   const [userData,setUserData]=useState([]);
   const gettingData3=()=>{
-    axios.get(`http://localhost:9000/data/test`)
+    axios.get(`https://msdbackend-1.onrender.com/data/test`)
     .then((res)=>{
       console.log(res);
       setUserData(res.data)
@@ -33,7 +33,7 @@ function AdminDash() {
 
   const RemoveItem=(event)=>{
     console.log("remove");
-    axios.get(`http://localhost:9000/data/delete/${event}`)
+    axios.get(`https://msdbackend-1.onrender.com/data/delete/${event}`)
     .then(()=>{
       console.log("thik hai");
     })

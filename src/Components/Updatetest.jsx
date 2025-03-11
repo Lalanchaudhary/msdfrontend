@@ -25,7 +25,7 @@ function UpdateItem() {
     const updateItem = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:9000/data/update/${data._id}`, user);
+            await axios.put(`https://msdbackend-1.onrender.com/update/${data._id}`, user);
             navigate('/');
         } catch (error) {
             console.log("Error:", error);

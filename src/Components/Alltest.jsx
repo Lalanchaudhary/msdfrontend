@@ -14,7 +14,7 @@ function Alltest(props) {
         gettingData2();
     },[])
     const gettingData2=()=>{
-        axios.get(`http://localhost:9000/data/test`)
+        axios.get(`https://msdbackend-1.onrender.com/data/test`)
         .then((res)=>{
           console.log(res);
           setAllData(res.data)

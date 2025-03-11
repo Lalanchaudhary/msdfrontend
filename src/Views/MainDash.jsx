@@ -7,7 +7,7 @@ const MainDash = () => {
   const navigate=useNavigate();
   const [testData,setTestData]=useState([]);
   const gettingData3=()=>{
-    axios.get(`http://localhost:9000/data/test`)
+    axios.get(`https://msdbackend-1.onrender.com/data/test`)
     .then((res)=>{
       console.log(res);
       setTestData(res.data)
@@ -30,7 +30,7 @@ const MainDash = () => {
 
   const [userData,setUserData]=useState([]);
   const gettingData=()=>{
-    axios.get(`http://localhost:9000/users`)
+    axios.get(`https://msdbackend-1.onrender.com/users`)
     .then((res)=>{
       console.log(res);
       setUserData(res.data)

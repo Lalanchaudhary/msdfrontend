@@ -28,7 +28,7 @@ const Signup = () => {
     }
     try {
       const response = await axios.post(
-        `http://localhost:9000/signup`,
+        `https://msdbackend-1.onrender.com/signup`,
         signupData
       );
       navigate("/login");
